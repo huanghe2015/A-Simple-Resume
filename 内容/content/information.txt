@@ -1,0 +1,11 @@
+<ul>
+	<li>叶旭峰/男/1990</li>
+	<li>本科/安徽农业大学</li>
+	<li>工作年限：一年</li>
+	<li>微博：<a href="weibo.com" target="_blank">@决断分明</a></li>
+	<li>技术博客：<a href="github.com" target="_blank">github</a></li>
+	<li>Github：<a href="github.com" target="_blank">github</a></li>
+	<li>期望职位：PHP首席程序员，应用架构师</li>
+	<li>期望薪资：税后月薪10K，特别喜欢的公司除外</li>
+	<li>期望城市：合肥</li>
+</ul>

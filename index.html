@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=description content="这是一份基于Bootstrap撰写的简易电子简历">
+	<meta name=keywords content="">
+	<meta name="author" content="AK103">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<!--浏览器标题-->
+	<title>简易电子简历</title>
+	<!--JS-->
+	<script src="框架/js/jquery.min.js"></script>
+	<script src="框架/js/bootstrap.min.js"></script>
+	<script>
+		"use strict";
+		var htmlObj;
+		var bgm;
+		/*加载页面内容*/
+		function load(filename){
+			htmlObj=$.ajax({url:filename,async:false});
+			$('#content').html(htmlObj.responseText);
+		}
+		/*背景音乐控制*/
+		function toggleBgm(){
+			$('#bgmControl').toggleClass('bgm');
+			bgm=document.getElementById('bgm');
+			if(bgm.paused){
+				bgm.play();
+			}
+			else{
+				bgm.pause();
+			}
+		}
+		/**/
+	</script>
+	<!--CSS-->
+	<link rel="stylesheet" href="框架/css/bootstrap.min.css">
+	<link rel="stylesheet" href="资源/css/layout.css">
+</head>
+<!--页面内容-->
+<body class="container">
+<header class="row clearfix">
+	<div class="col-md-12 column">
+		<h1 class="text-center text-info">叶旭峰的简历</h1>
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">切换导航</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<img src="资源/img/normalmusic.svg" class="navbar-brand bgm" id="bgmControl" onclick="toggleBgm()">
+				<audio autoplay hidden id="bgm" loop>
+					<source src="资源/music/来自星星的你-Back%20To%20The%20Present.mp3">
+				</audio>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="#" onclick="load('内容/content/instruction.txt')">说明</a>
+					</li>
+					<li>
+						<a href="#" onclick="load('内容/content/contact.txt')">联系方式</a>
+					</li>
+					<li>
+						<a href="#" onclick="load('内容/content/information.txt')">个人信息</a>
+					</li>
+					<li>
+						<a href="#" onclick="load('内容/content/experience.txt')">工作经历</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#" onclick="load('内容/content/openSourceProjectsAndWorks.txt')">开源项目和作品</a>
+					</li>
+					<li>
+						<a href="#" onclick="load('内容/content/skillsList.txt')">技能清单</a>
+					</li>
+					<li>
+						<a href="#" onclick="load('内容/content/thanks.txt')">致谢</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+<main class="row clearfix">
+	<div id="content" class="col-md-12 column">
+	</div>
+</main>
+<footer class="row clearfix">
+	<div class="col-md-12 column">
+		<address>
+			<strong>作者：叶旭峰</strong>
+			<br/>
+			学号：14100794
+			<br/>
+			<abbr title="Phone">电话：</abbr>
+			18856025066
+		</address>
+	</div>
+</footer>
+</body>
+</html>

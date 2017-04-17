@@ -1,0 +1,13 @@
+<button class="btn btn-info">戳我了解详情</button>
+<script type="text/javascript">
+$(document).ready(function(){
+$(".btn").click(function(){
+    $("#detail").slideToggle("slow");
+  });
+});
+</script>
+<ul id="detail" style="display:none;">
+	<li>手机：135********</li>
+	<li>Email：<a href="mailto:test@gmail.com" target="_blank">test@gmail.com</a></li>
+	<li>QQ/微信号：66666666</li>
+</ul>

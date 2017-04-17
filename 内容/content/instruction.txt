@@ -1,0 +1,11 @@
+<p>&emsp;本简历由叶旭峰撰写，基于<strong>Markdown</strong>编写、CSS修饰、HTML代码优化和美化而得。感谢Bootstrap项目。（强烈建议在手机上观看）</p>
+<button class="btn btn-default">点击这里，使矩形淡入淡出。</button>
+<br>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#block").fadeToggle();
+  });
+});
+</script>
+<div id="block" style="width:80px;height:80px;background-color:red;"></div>

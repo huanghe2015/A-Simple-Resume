@@ -1,0 +1,15 @@
+<h2>开源项目</h2>
+<ul>
+	<li><a href="http://github.com/yourname/projectname" target="_blank">STU</a>：项目的简要说明，Star和Fork数多的可以注明</li>
+	<li><a href="http://github.com/yourname/projectname" target="_blank">WXYZ</a>：项目的简要说明，Star和Fork数多的可以注明</li>
+</ul>
+<h2>技术文章</h2>
+<ul>
+	<li><a href="http://get.jobdeer.com/706.get" target="_blank">一个产品经理眼中的云计算：前生今世和未来</a></li>
+	<li><a href="http://get.jobdeer.com/343.get" target="_blank">来自HeroKu的HTTP API 设计指南(翻译文章)</a></li>
+</ul>
+<h2>演讲和讲义</h2>
+<ul>
+	<li>2014架构师大会演讲：<a href="http://jobdeer.com" target="_blank">如何通过Docker优化内部开发</a></li>
+	<li>9月公司内部分享：<a href="http://jobdeer.com" target="_blank">云计算的前生今世</a></li>
+</ul>
